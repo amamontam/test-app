@@ -1,0 +1,9 @@
+<am-header [headerText]="'common.contacts' | translate"></am-header>
+<button (click)="showCreateModal()">{{ "common.create" | translate }}</button>
+<div *ngFor="let contact of contacts">
+  <am-contact
+    [contactData]="contact"
+    (contactEdit)="showEditModal(contact)"
+    (contactDelete)="showDeleteModal(contact)"
+  ></am-contact>
+</div>

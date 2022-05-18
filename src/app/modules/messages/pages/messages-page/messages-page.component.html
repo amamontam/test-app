@@ -1,0 +1,9 @@
+<am-header [headerText]="'common.messages' | translate"></am-header>
+<button (click)="showCreateModal()">{{ "common.create" | translate }}</button>
+<div *ngFor="let message of messages">
+  <am-message
+    [messageData]="message"
+    (messageEdit)="showEditModal(message)"
+    (messageDelete)="showDeleteModal(message)"
+  ></am-message>
+</div>

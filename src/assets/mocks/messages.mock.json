@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "to": "lol",
+    "sendingDate": "2022-05-17T12:02:02.010Z",
+    "messageText": "hello"
+  },
+  {
+    "id": "2",
+    "to": "lol",
+    "sendingDate": "2022-05-17T12:02:02.010Z",
+    "messageText": "how r u?"
+  }
+]

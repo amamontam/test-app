@@ -1,0 +1,10 @@
+<form [formGroup]="messageForm">
+  <label>{{ "messages.message-resipient" | translate }}</label>
+  <input formControlName="to" />
+  <label>{{ "messages.message-text" | translate }}</label>
+  <input formControlName="messageText" />
+</form>
+<div class="actions">
+  <button (click)="sendMessage()">{{ "common.save" | translate }}</button>
+  <button (click)="cancelForm()">{{ "common.cancel" | translate }}</button>
+</div>

@@ -1,0 +1,9 @@
+<am-header [headerText]="'common.home' | translate"></am-header>
+<div class="nav-buttons">
+  <button
+    *ngFor="let navItem of navigationConfig"
+    [routerLink]="navItem.routerLink"
+  >
+    {{ navItem.text | translate }}
+  </button>
+</div>

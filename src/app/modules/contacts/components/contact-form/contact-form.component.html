@@ -1,0 +1,15 @@
+<form [formGroup]="contactForm">
+  <label>{{ "contacts.contact-firstname" | translate }}</label>
+  <input formControlName="firstName" />
+
+  <label>{{ "contacts.contact-lastname" | translate }}</label>
+  <input formControlName="lastName" />
+
+  <label>{{ "contacts.contact-email" | translate }}</label>
+  <input formControlName="email" />
+</form>
+
+<div class="actions">
+  <button (click)="saveContact()">{{ "common.save" | translate }}</button>
+  <button (click)="cancelForm()">{{ "common.cancel" | translate }}</button>
+</div>

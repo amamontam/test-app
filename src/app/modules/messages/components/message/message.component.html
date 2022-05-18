@@ -1,0 +1,16 @@
+<div class="message-info">
+  <div class="message-author text-cell">
+    {{ messageData.to }}
+  </div>
+  <div class="message-text text-cell">
+    {{ messageData.messageText }}
+  </div>
+  <div class="message-date text-cell">
+    {{ messageData.sendingDate | date: "d.M.yy, h:mm a" }}
+  </div>
+
+  <div class="message-actions">
+    <button (click)="editMessage()">{{ "common.edit" | translate }}</button>
+    <button (click)="deleteMessage()">{{ "common.delete" | translate }}</button>
+  </div>
+</div>

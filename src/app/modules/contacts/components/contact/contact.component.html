@@ -1,0 +1,16 @@
+<div class="contact-info">
+  <div class="contact-firstname text-cell">
+    {{ contactData.firstName }}
+  </div>
+  <div class="contact-lastname text-cell">
+    {{ contactData.lastName }}
+  </div>
+  <div class="contact-email text-cell">
+    {{ contactData.email }}
+  </div>
+
+  <div class="contact-actions">
+    <button (click)="editContact()">{{ "common.edit" | translate }}</button>
+    <button (click)="deleteContact()">{{ "common.delete" | translate }}</button>
+  </div>
+</div>

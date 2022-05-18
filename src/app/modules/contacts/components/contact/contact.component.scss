@@ -1,0 +1,34 @@
+:host {
+  display: block;
+}
+
+.contact-info {
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 0 0 rgb(100 121 143 / 12%);
+
+  .text-cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .contact-firstname {
+    flex-basis: 30%;
+  }
+
+  .contact-lastname {
+    flex-basis: 30%;
+  }
+
+  .contact-email {
+    flex-basis: 25%;
+  }
+
+  .contact-actions {
+    flex-basis: 15%;
+    display: flex;
+    gap: 10px;
+  }
+}
